@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- this is the navigation bar which has heading and other navigation realted details -->
+        <nav>
+            <h1 id="mainheading">My Portfolio</h1>
+
+            <div class="navbar" id="myNavigation">
+                <img src="Assets/ANI.png" id="logo">
+                <a href="#blogName">Blogs</a>
+                <a href="#educationName">Education</a>
+                <a href="#experienceName">Experience</a>
+                <a href="#projectName">Projects</a>
+                <a href="#skillName">Skills</a>
+                <a class="naviIcon" onclick="navigationOpen()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+
+        <!-- this section is having details about myself and have a picture of me -->
+        <main>
+            <div class="aboutMe">
+                <img src="Assets/aniketh1.jpeg" id="profilepicture">
+                <div class="namesec">
+                    <h2 id="mainName">Yelgonda Aniketh Reddy</h2>
+                    <h3 id="aboutMe">About Me</h3>
+                    <p id="aboutMePara">Strong in design and integration with problem-solving skills. Proficient in C,
+                        PYTHON,
+                        MySQL,
+                        JavaScript. Passionate about implementing and launching new projects. Ability to work on front
+                        end, back end
+                        and Testing Technologies. Looking to start the career as an Intern with a reputed firm driven by
+                        technology.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- this section is about my skill set -->
+        <div id="content1">
+            <h1 id="skillName">Skills</h1>
+            <br>
+            <div class="skillSet">
+                <div class="skill-box">
+                    <img id="skillImage" src="Assets/c.png" alt="please reload for better picture">
+                    <h3 class="skill-title">C Prog.</h3>
+                </div>
+                <div class="skill-box">
+                    <img id="skillImage" src="Assets/java.png" alt="please reload for better picture">
+                    <h3 class="skill-title">Java</h3>
+                </div>
+                <div class="skill-box">
+                    <img id="skillImage" src="Assets/html.png" alt="please reload for better picture">
+                    <h3 class="skill-title">HTML</h3>
+                </div>
+                <div class="skill-box">
+                    <img id="skillImage" src="Assets/mongodb.png" alt="please reload for better picture">
+                    <h3 class="skill-title">MongoDB</h3>
+                </div>
+                <div class="skill-box">
+                    <img id="skillImage" src="Assets/javascript.png" alt="please reload for better picture">
+                    <h3 class="skill-title">JavaScript</h3>
+                </div>
+                <div class="skill-box">
+                    <img id="skillImage" src="Assets/Nodejs.png" alt="please reload for better picture">
+                    <h3 class="skill-title">NodeJS</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- this section is about the project that hav worked on -->
+        <div id="content2">
+            <h1 id="projectName">Projects</h1>
+            <br>
+            <div class="projectSet">
+                <div class="project-box">
+                    <img id="projectImage" src="Assets/ecommerce.jpeg" alt="please reload for better picture">
+                    <h3 class="project-title">E-Commerce</h3>
+                </div>
+                <div class="project-box">
+                    <img id="projectImage" src="Assets/whatsapp.png" alt="please reload for better picture">
+                    <h3 class="project-title">Whatsapp Clone</h3>
+                </div>
+                <div class="project-box">
+                    <img id="projectImage" src="Assets/airbnbclone.png" alt="please reload for better picture">
+                    <h3 class="project-title">Airbnb Clone</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- this section is the experience what I have in the past -->
+        <div id="content3">
+            <h1 id="experienceName">Experience</h1>
+            <div class="experienceSet">
+                <div class="experience-box">
+                    <h3 class="experience-title">Associate QA Engineer</h3>
+                    <h4 class="experience-title">Aug2021-Dec2022</h4>
+                    <h5 class="experience-title">OpenText Tech. Pvt Ltd.</h5>
+                </div>
+                <div class="experience-box">
+                    <h3 class="experience-title">Software Engineer Intern</h3>
+                    <h4 class="experience-title">Jan2021-Aug2021</h4>
+                    <h5 class="experience-title">OpenText Tech. Pvt Ltd.</h5>
+                </div>
+                <div class="experience-box">
+                    <h3 class="experience-title">Software Engineer Intern</h3>
+                    <h4 class="experience-title">Aug2020-Dec2020</h4>
+                    <h5 class="experience-title">Caliber Pvt Ltd.</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- This section gives information about my education -->
+        <div id="content4">
+            <h1 id="educationName">Education</h1>
+            <div class="educationSet">
+                <div class="education-box">
+                    <h3 class="education-title">University of New Haven</h3>
+                    <h4 class="education-title">Jan2023-Dec2024</h4>
+                    <h5 class="education-title">CGPA- 3.55</h5>
+                </div>
+                <div class="education-box">
+                    <h3 class="education-title">GITAM Unisersity </h3>
+                    <h4 class="education-title">May2017-Aug2021</h4>
+                    <h5 class="education-title">CGPA- 8.78</h5>
+                </div>
+                <div class="education-box">
+                    <h3 class="education-title">Narayana Junior College</h3>
+                    <h4 class="education-title">Aug2015-Dec2021</h4>
+                    <h5 class="education-title">Per- 98%</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- This section gives information about my blogs -->
+        <div id="content5">
+            <h1 id="blogName">Blogs</h1>
+            <br>
+            <div class="blogSet">
+                <div class="blog-box">
+                    <img id="blogImage" src="Assets/blog1.png" alt="please reload for better picture">
+                    <h3 class="blog-title">Blog on Web Development</h3>
+                </div>
+                <div class="blog-box">
+                    <img id="blogImage" src="Assets/blog2.png" alt="please reload for better picture">
+                    <h3 class="blog-title">Blog on AI Machines</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- This is section where you have my social media links and contact email -->
+        <footer>
+            <a href="https://www.facebook.com/aniketh.reddy.568/"><img src="Assets/facebook.png"
+                    alt="Description of your image"></a>
+            <a href="https://www.linkedin.com/in/anikethreddyy/"><img src="Assets/linkedin.png"
+                    alt="Description of your image"></a>
+            <a href="https://github.com/aniketh113"><img src="Assets/github.png" alt="Description of your image"></a>
+            <a href="mailto: yelgondaanikethreddy@gmail.com"><img src="Assets/gmail.png"
+                    alt="Description of your image"></a>
+        </footer>
+    </div>
+</body>
+
+</html>

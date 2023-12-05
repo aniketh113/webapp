@@ -1,0 +1,542 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0px;
+    color: black;
+    font-weight: 700;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "main main main main"
+        "content1 content1 content1 content1"
+        "content2 content2 content2 content2"
+        "content3 content3 content3 content3"
+        "content4 content4 content4 content4"
+        "content5 content5 content5 content5"
+        "footer footer footer footer";
+}
+
+/* this below code is for main heading */
+#mainheading {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.topContent {
+    background: #fffcdf;
+    background: linear-gradient(332deg, #fffcdf 43%, #f0d7ff 100%);
+}
+
+/* this is for navigation bar */
+nav {
+    grid-area: nav;
+    background: #f0d7ff;
+}
+
+.navbar .naviIcon {
+    display: none;
+}
+
+.navbar {
+
+    grid-area: navi;
+    overflow: hidden;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.navbar a {
+    float: right;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid black;
+    transition: width .5s;
+}
+
+main {
+    grid-area: main;
+
+    .aboutMe {
+        background: linear-gradient(332deg, #fffcdf 43%, #f0d7ff 100%);
+        height: 500px;
+        padding-left: 225px;
+        padding-top: 50px;
+
+        #profilepicture {
+            grid-area: profilepic;
+            margin-top: 10px;
+            height: 325px;
+            width: 255px;
+        }
+
+        .namesec {
+            #mainName {
+                font-size: 50px;
+                font-family: Arial, sans-serif;
+            }
+
+            #aboutMe {
+                font-size: 25px;
+                font-family: Arial, sans-serif;
+            }
+
+            #aboutMePara {
+                font-size: 20px;
+                text-align: justify;
+                font-family: Arial, sans-serif;
+            }
+
+            display: inline-block;
+            width: 600px;
+            margin-left: 175px;
+            margin-top: 80px;
+        }
+    }
+}
+
+
+
+#content1 {
+    grid-area: content1;
+    background-color: #faf5ae;
+    padding-top: 20px;
+    margin-top: 0px;
+    height: 300px;
+
+    #skillName {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        margin-left: 200px;
+    }
+
+    #skillImage {
+        width: 50px;
+        height: 50px;
+        padding-left: 25px;
+        padding-top: 3px;
+    }
+
+    .skillSet {
+        margin-top: 20px;
+        margin-left: 275px;
+    }
+
+    .skill-box {
+        display: inline-block;
+        border: 1px solid black;
+        width: 100px;
+        height: 120px;
+        border-radius: 20px;
+        margin: 35px;
+        box-shadow: 0 4px 8px 0 #00000033;
+        transition: 0.1s;
+    }
+
+    .skill-box:hover {
+        box-shadow: 0 25px 40px 0 #00000033;
+    }
+
+    .skill-title {
+        text-align: center;
+        font-size: medium;
+        font-family: Arial, sans-serif;
+    }
+}
+
+#content2 {
+    grid-area: content2;
+    padding-top: 20px;
+    background-color: #26577C;
+
+    #projectName {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        margin-left: 200px;
+        color: white;
+    }
+
+    #projectImage {
+        width: 100px;
+        height: 100px;
+        padding-left: 73px;
+        padding-top: 35px;
+    }
+
+    .projectSet {
+        margin-top: 20px;
+        margin-left: 325px;
+    }
+
+    .project-box {
+        display: inline-block;
+        border: 1px solid black;
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        margin: 25px;
+        box-shadow: 0 4px 8px 0 #00000033;
+        transition: 0.1s;
+        color: white;
+    }
+
+    .project-box:hover {
+        box-shadow: 0 25px 40px 0 #00000033;
+    }
+
+    .project-title {
+        text-align: center;
+        font-size: medium;
+        font-family: Arial, sans-serif;
+    }
+}
+
+#content3 {
+    grid-area: content3;
+    background-color: #d6c8ff;
+    padding-top: 20px;
+    height: 300px;
+
+    #experienceName {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        margin-left: 200px;
+    }
+
+    .experienceSet {
+        margin-top: 25px;
+        margin-left: 300px;
+    }
+
+    .experience-box {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        margin: 25px;
+    }
+
+    .experience-title {
+        text-align: center;
+        font-size: medium;
+        font-family: Arial, sans-serif;
+    }
+}
+
+#content4 {
+    grid-area: content4;
+    background-color: #d2b9f7;
+    padding-top: 20px;
+    height: 280px;
+
+    #educationName {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        margin-left: 200px;
+    }
+
+    .educationSet {
+        margin-top: 25px;
+        margin-left: 300px;
+    }
+
+    .education-box {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        margin: 25px;
+    }
+
+    .education-title {
+        text-align: center;
+        font-size: medium;
+        font-family: Arial, sans-serif;
+    }
+}
+
+#content5 {
+    grid-area: content5;
+    background-color: #BEADFA;
+    padding-top: 20px;
+
+    #blogName {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+        margin: 0px;
+        margin-left: 200px;
+        color: #000000;
+    }
+
+    #blogImage {
+        width: 100px;
+        height: 100px;
+        padding-left: 73px;
+        padding-top: 35px;
+    }
+
+    .blogSet {
+        margin-left: 450px;
+        height: 300px;
+    }
+
+    .blog-box {
+        display: inline-block;
+        border: 1px solid #000000;
+        width: 250px;
+        height: 250px;
+        margin-left: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 #00000033;
+        transition: 0.1s;
+        color: #000000;
+    }
+
+    .blog-box:hover {
+        box-shadow: 0 25px 40px 0 #00000033;
+    }
+
+    .blog-title {
+        text-align: center;
+        font-size: medium;
+        font-family: Arial, sans-serif;
+    }
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    height: 100px;
+    background-color: #dedede;
+}
+
+a img {
+    width: 30px;
+    height: 30px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+/* Mobile Layout : from 500px only screen will become resposive as mentioned*/
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "nav"
+            "main main"
+            "content1 content1"
+            "content2 content2"
+            "content3 content3"
+            "content4 content4"
+            "content5 content5"
+            "footer footer";
+    }
+
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.naviIcon {
+        float: right;
+        display: block;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .naviIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    main {
+        grid-area: main;
+
+        .aboutMe {
+            height: 600px;
+            padding-left: 25px;
+            padding-top: 50px;
+
+            #profilepicture {
+                height: 240px;
+                width: 190px;
+                padding-left: 125px;
+            }
+
+            .namesec {
+                #mainName {
+                    font-size: 35px;
+                    font-family: Arial, sans-serif;
+                }
+
+                #aboutMe {
+                    font-size: 15px;
+                }
+
+                #aboutMePara {
+                    font-size: 17px;
+                }
+
+                width: 350px;
+                margin-left:50px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    #content1 {
+        grid-area: content1;
+        height: 625px;
+
+        #skillName {
+            font-size: 30px;
+            margin-left: 80px;
+        }
+
+        #skillImage {
+            width: 30px;
+            height: 30px;
+            padding-left: 25px;
+            padding-top: 10px;
+        }
+
+        .skillSet {
+            margin-top: 10px;
+            margin-left: 85px;
+        }
+
+        .skill-box {
+            width: 80px;
+            height: 100px;
+        }
+    }
+
+    #content2 {
+        grid-area: content2;
+
+        #projectName {
+            font-size: 30px;
+            margin-left: 80px;
+        }
+
+        #projectImage {
+            width: 80px;
+            height: 80px;
+            padding-left: 65px;
+        }
+
+        .projectSet {
+            margin-left: 100px;
+        }
+
+        .project-box {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    #content3 {
+        grid-area: content3;
+        height: 650px;
+
+        #experienceName {
+            font-size: 30px;
+            margin-left: 80px;
+        }
+
+        .experienceSet {
+            margin-top: 5px;
+            margin-left: 70px;
+        }
+
+        .experience-box {
+            width: 250px;
+            height: 150px;
+        }
+    }
+
+    #content4 {
+        grid-area: content4;
+        height: 650px;
+
+        #educationName {
+            font-size: 30px;
+            margin-left: 80px;
+        }
+
+        .educationSet {
+            margin-top: 5px;
+            margin-left: 70px;
+        }
+
+        .education-box {
+            width: 250px;
+            height: 150px;
+        }
+    }
+
+
+    #content5 {
+        grid-area: content5;
+        height: 600px;
+
+        #blogName {
+            font-size: 30px;
+            margin-left: 70px;
+        }
+
+        #blogImage {
+            width: 80px;
+            height: 80px;
+            padding-left: 63px;
+            padding-top: 35px;
+        }
+
+        .blogSet {
+            margin-left: 100px;
+            height: 300px;
+        }
+
+        .blog-box {
+            width: 200px;
+            height: 200px;
+            margin-top: 40px;
+        }
+    }
+
+}

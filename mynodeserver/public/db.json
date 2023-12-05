@@ -1,0 +1,47 @@
+{"places":
+ [{
+      "id":1,
+      "title": "Grand Canyon, Arizona",
+      "season_to_visit": "Fall",
+      "history": "Formed by the Colorado River over millions of years.",
+      "things_to_do": "Hiking, River Rafting, Helicopter Tours",
+      "distance_from_airport": 7,
+      "food": "Southwestern cuisine"
+    },
+    {
+      "id":2,
+      "title": "Yellowstone National Park, Wyoming",
+      "season_to_visit": "Summer",
+      "history": "First national park in the world.",
+      "things_to_do": "Wildlife Viewing, Geothermal Features, Hiking",
+      "distance_from_airport": 5,
+      "food": "Local Bison dishes"
+    },
+    {
+      "id":3,
+      "title": "New York City, New York",
+      "season_to_visit": "Fall",
+      "history": "global hub for finance, culture, and fashion.",
+      "things_to_do": "Times Square, Central Park, Broadway Shows",
+      "distance_from_airport": 15,
+      "food": "Diverse international cuisine"
+    },
+    {
+      "id":4,
+      "title": "New Orleans, Louisiana",
+      "season_to_visit": "Spring",
+      "history": "Famous for Mardi Gras celebrations.",
+      "things_to_do": "French Quarter, Jazz Fest, Creole Cuisine Tour",
+      "distance_from_airport": 12,
+      "food": "Creole and Cajun dishes"
+    },
+    {
+      "id":5,
+      "title": "Yosemite National Park, California",
+      "season_to_visit": "Summer",
+      "history": "Famous for its waterfalls and giant sequoias.",
+      "things_to_do": "Hiking, Rock Climbing, Photography",
+      "distance_from_airport": 65,
+      "food": "Local California cuisine"
+    }]
+}
