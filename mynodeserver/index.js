@@ -13,8 +13,7 @@ async function connectToMongoDB() {
     console.log('Connected to MongoDB');
     return client.db('destinations');
   } catch (error) {
-    console.error('Error connecting to MongoDB:', error);
-    
+    console.error('Error connecting', error);
   }
 }
 const server = http.createServer(async (req, res) => {
@@ -54,7 +53,6 @@ const server = http.createServer(async (req, res) => {
         res.end('Not Found');
         return;
       }
-
       const contentType = path.extname(assetPath) === '.png' ? 'image/png' : 'image/jpeg';
       res.writeHead(200, { 'Content-Type': contentType });
       res.end(data);
@@ -82,7 +80,6 @@ const server = http.createServer(async (req, res) => {
       const db = await connectToMongoDB();
       const data = await db.collection('places').find({}).toArray();
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      console.log(data)
       res.end(JSON.stringify(data));
     } catch (error) {
       console.error('Error retrieving data:', error);
