@@ -75,7 +75,7 @@ const server = http.createServer(async (req, res) => {
      }
     else if (req.url==='/api')
     {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     try {
